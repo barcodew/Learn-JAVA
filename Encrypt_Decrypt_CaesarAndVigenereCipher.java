@@ -1,5 +1,7 @@
 package TugasPraktikum_1;
 
+import java.util.*;
+
 public class TugasNomer5 {
 
      // Caesar Cipher
@@ -67,8 +69,11 @@ public class TugasNomer5 {
   }
 
   public static void main(String[] args) {
-    String pesan = "Sedang berusaha menjadi lebih baik lagi bekerja keras dan pantang menyerah bertanggungjawab percaya diri!";
-    int kunci = 5;
+    Scanner input = new Scanner(System.in);
+
+
+    String pesan = input.nextLine();
+    int kunci = 3;
     String kunciVigenere = "abc";
 
     String encryptedCaesarCipher = encryptCaesarCipher(pesan, kunci);
@@ -80,7 +85,11 @@ public class TugasNomer5 {
     System.out.println("Encrypted Vigenere Cipher: " + encryptedVigenereCipher);
     String decryptedVigenereCipher = decryptVigenereCipher(encryptedVigenereCipher, kunciVigenere);
     System.out.println("Decrypted Vigenere Cipher: " + decryptedVigenereCipher);
-  }   
+
+  }  
+  
+  
+
 }
 
 // Algoritma Caesar Cipher
