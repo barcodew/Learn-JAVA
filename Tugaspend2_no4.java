@@ -1,10 +1,8 @@
-package Nomer_5;
+
 
 import java.util.*;
 
 public class TugasPend24 {
-
-
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,7 +20,8 @@ public class TugasPend24 {
         System.out.println("Masukkan elemen untuk ArrayList (selesai dengan -1):");
         while (true) {
             int element = scanner.nextInt();
-            if (element == -1) break;
+            if (element == -1)
+                break;
             arrayList.add(element);
         }
         System.out.println("Elemen dalam ArrayList: " + arrayList);
@@ -32,7 +31,8 @@ public class TugasPend24 {
         System.out.println("Masukkan elemen untuk Vector (selesai dengan -1):");
         while (true) {
             int element = scanner.nextInt();
-            if (element == -1) break;
+            if (element == -1)
+                break;
             vector.add(element);
         }
         System.out.println("Elemen dalam Vector: " + vector);
@@ -42,19 +42,19 @@ public class TugasPend24 {
         System.out.println("Masukkan elemen untuk LinkedList (selesai dengan -1):");
         while (true) {
             int element = scanner.nextInt();
-            if (element == -1) break;
+            if (element == -1)
+                break;
             linkedList.add(element);
         }
         System.out.println("Elemen dalam LinkedList: " + linkedList);
-
-
 
         // Stack
         Stack<Integer> stack = new Stack<>();
         System.out.println("Masukkan elemen untuk Stack (selesai dengan -1):");
         while (true) {
             int element = scanner.nextInt();
-            if (element == -1) break;
+            if (element == -1)
+                break;
             stack.push(element);
         }
         System.out.println("Elemen dalam Stack: " + stack);
@@ -64,14 +64,12 @@ public class TugasPend24 {
         System.out.println("Masukkan elemen untuk Queue (selesai dengan -1):");
         while (true) {
             int element = scanner.nextInt();
-            if (element == -1) break;
+            if (element == -1)
+                break;
             queue.offer(element);
         }
         System.out.println("Elemen dalam Queue: " + queue);
 
-      
-    
-}
+    }
 
 }
-
